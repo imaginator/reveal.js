@@ -1,16 +1,17 @@
 /**
- * &yet theme for reveal.js.
+ * Buddycloud theme for reveal.js.
  *
  * Based on beige theme
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @font-face {
-  font-family: Gotham;
-  src: url("../../lib/font/GothamCond-Bold.otf") format("opentype"); }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  src: url("../../lib/font/OpenSans-ExtraBold.woff") format("woff"); }
 
-/*@mixin bodyBackground() {
+@mixin bodyBackground() {
     @include radial-gradient($backgroundColor2, $backgroundColor);
-}*/
+}
 .backgrounds {
   background-repeat: repeat-x; }
 
@@ -30,7 +31,7 @@ body {
 
 ::selection {
   color: white;
-  background: #ec008c;
+  background: #2DAEBF;
   text-shadow: none; }
 
 /*********************************************
@@ -43,12 +44,11 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #12acef;
-  font-family: "Gotham", sans-serif;
+  color: #38434C;
+  font-family: "Open Sans", sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
-  text-shadow: -1px -1px 1px #4d5659; }
+  /* text-shadow: -1px -1px 1px #4d5659; }
 
 .reveal h1 {
   text-shadow: -1px -1px 1px #4d5659; }
@@ -57,7 +57,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #ec008c;
+  color: #2DAEBF;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -90,7 +90,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #ec008c;
+  border-color: #2DAEBF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -98,19 +98,19 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #ec008c; }
+  border-right-color: #2DAEBF; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #ec008c; }
+  border-left-color: #2DAEBF; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #ec008c; }
+  border-bottom-color: #2DAEBF; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #ec008c; }
+  border-top-color: #2DAEBF; }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #b9006e; }
@@ -131,7 +131,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #ec008c;
+  background: #2DAEBF;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -142,10 +142,10 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #ec008c; }
+  color: #2DAEBF; }
 
 p strong, p em, p span, h1 strong, h1 em, h1 span, h2 strong, h2 em, h2 span, h3 strong, h3 em, h3 span, h4 strong, h4 em, h4 span, h5 strong, h5 em, h5 span, h6 strong, h6 em, h6 span, li strong, li em, li span {
-  color: #ec008c; }
+  color: #2DAEBF; }
 
 .reveal h1.big {
   font-size: 5em; }
