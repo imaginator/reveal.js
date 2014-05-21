@@ -5,9 +5,20 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
+  font-style: normal;
   font-weight: 800;
-  src: url("../../lib/font/OpenSans-ExtraBold.woff") format("woff"); }
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url("../../lib/font/OpenSans-ExtraBold.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'),  url("../../lib/font/OpenSans-Semibold.woff") format('woff');
+}
+
+
 
 @mixin bodyBackground() {
     @include radial-gradient($backgroundColor2, $backgroundColor);
@@ -19,15 +30,16 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: white;
-  background-color: white; }
+  background: black;
+  background-color: black; }
 
 .reveal {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 36px;
+  font-weight: 600;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #4d5659; }
+  color: white; }
 
 ::selection {
   color: white;
@@ -44,9 +56,10 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #38434C;
-  font-family: "Open Sans", sans-serif;
-  line-height: 0.9em;
+  color: #2DAEBF;
+  font-weight: 800;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
+  line-height: 1.0em;
   letter-spacing: 0.02em;
   /* text-shadow: -1px -1px 1px #4d5659; }
 
